@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广域网络工作室 | Guangyu Network Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="logo.png" alt="广域网络工作室" class="logo-img">
+                <span class="logo-text">广域网络工作室</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我们</a></li>
+                <li><a href="#services" class="nav-link">服务</a></li>
+                <li><a href="#works" class="nav-link">案例</a></li>
+                <li><a href="#team" class="nav-link">团队</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <svg class="hero-svg" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="1440" height="800" fill="url(#grad1)"/>
+                <circle cx="200" cy="200" r="100" fill="#0f3460" opacity="0.3"/>
+                <circle cx="1200" cy="600" r="150" fill="#0f3460" opacity="0.2"/>
+                <circle cx="1300" cy="150" r="80" fill="#e94560" opacity="0.1"/>
+                <path d="M0,400 Q360,300 720,400 T1440,400 L1440,800 L0,800 Z" fill="#0f3460" opacity="0.1"/>
+                <path d="M0,500 Q360,400 720,500 T1440,500 L1440,800 L0,800 Z" fill="#0f3460" opacity="0.15"/>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logo.png" alt="广域网络工作室">
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">连接世界</span>
+                <span class="title-line highlight">创造无限可能</span>
+            </h1>
+            <p class="hero-subtitle">专业的网络技术解决方案，为您的业务保驾护航</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    了解服务
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    联系我们
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>向下滚动探索</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ABOUT US</span>
+                <h2 class="section-title">关于广域网络工作室</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">广域网络工作室成立于2026年，是一家专注于网络技术服务的创新型工作室。</p>
+                    <p>我们致力于为企业和个人提供专业的网站建设、网络安全、系统开发等全方位技术解决方案。凭借丰富的行业经验和专业的技术团队，我们已成功服务众多客户，帮助他们在数字化时代脱颖而出。</p>
+                    <p>我们相信技术的力量，更相信用心服务的价值。每一个项目，我们都倾注全部热情，为客户打造最优质的网络体验。</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e94560" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">客户满意度</span>
+                        </div>
+                        <div class="stat-item">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e94560" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">完成项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e94560" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">合作客户</span>
+                        </div>
+                        <div class="stat-item">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e94560" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span class="stat-number">7×24</span>
+                            <span class="stat-label">技术支持</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <svg class="network-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- 连接线 -->
+                            <line x1="200" y1="200" x2="100" y2="100" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+                            <line x1="200" y1="200" x2="300" y2="100" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+                            <line x1="200" y1="200" x2="100" y2="300" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+                            <line x1="200" y1="200" x2="300" y2="300" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+                            <line x1="200" y1="200" x2="50" y2="200" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+                            <line x1="200" y1="200" x2="350" y2="200" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+                            <line x1="100" y1="100" x2="300" y2="100" stroke="#0f3460" stroke-width="1" opacity="0.3"/>
+                            <line x1="100" y1="300" x2="300" y2="300" stroke="#0f3460" stroke-width="1" opacity="0.3"/>
+                            <!-- 中心节点 -->
+                            <circle cx="200" cy="200" r="40" fill="url(#nodeGrad)"/>
+                            <circle cx="200" cy="200" r="50" fill="none" stroke="#e94560" stroke-width="2" opacity="0.3"/>
+                            <!-- 外围节点 -->
+                            <circle cx="100" cy="100" r="25" fill="#0f3460"/>
+                            <circle cx="300" cy="100" r="25" fill="#0f3460"/>
+                            <circle cx="100" cy="300" r="25" fill="#0f3460"/>
+                            <circle cx="300" cy="300" r="25" fill="#0f3460"/>
+                            <circle cx="50" cy="200" r="25" fill="#0f3460"/>
+                            <circle cx="350" cy="200" r="25" fill="#0f3460"/>
+                            <!-- 节点图标 -->
+                            <text x="200" y="208" text-anchor="middle" fill="white" font-size="20">G</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">OUR SERVICES</span>
+                <h2 class="section-title">我们的专业服务</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">网站建设</h3>
+                    <p class="service-desc">定制化网站设计与开发，响应式布局，SEO优化，打造专业的企业形象展示平台</p>
+                    <a href="#contact" class="service-link">了解更多 →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">网络安全</h3>
+                    <p class="service-desc">网站安全防护、漏洞扫描、数据备份，全方位保障您的网络资产安全</p>
+                    <a href="#contact" class="service-link">了解更多 →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">系统开发</h3>
+                    <p class="service-desc">企业管理系统、小程序开发、APP定制，满足您的个性化业务需求</p>
+                    <a href="#contact" class="service-link">了解更多 →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">域名服务器</h3>
+                    <p class="service-desc">域名注册、服务器托管、云服务配置，一站式网络基础设施解决方案</p>
+                    <a href="#contact" class="service-link">了解更多 →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">技术运维</h3>
+                    <p class="service-desc">7×24小时技术支持，网站维护、系统升级，让您无后顾之忧</p>
+                    <a href="#contact" class="service-link">了解更多 →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">UI设计</h3>
+                    <p class="service-desc">界面设计、用户体验优化，让您的产品既美观又好用</p>
+                    <a href="#contact" class="service-link">了解更多 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例展示 -->
+    <section id="works" class="works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">OUR WORKS</span>
+                <h2 class="section-title">精选案例展示</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="works-grid">
+                <div class="work-item">
+                    <div class="work-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#1a1a2e"/>
+                            <rect x="50" y="40" width="300" height="20" rx="4" fill="#0f3460" opacity="0.5"/>
+                            <rect x="50" y="80" width="200" height="10" rx="2" fill="#e94560" opacity="0.7"/>
+                            <rect x="50" y="100" width="150" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+                            <rect x="50" y="130" width="300" height="120" rx="8" fill="#0f3460" opacity="0.3"/>
+                            <circle cx="125" cy="190" r="30" fill="#e94560" opacity="0.5"/>
+                            <rect x="170" y="160" width="150" height="10" rx="2" fill="#ffffff" opacity="0.5"/>
+                            <rect x="170" y="180" width="120" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+                            <rect x="170" y="200" width="100" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">企业官网建设</h3>
+                        <span class="work-category">网站开发</span>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#16213e"/>
+                            <rect x="100" y="30" width="200" height="240" rx="20" fill="#0f3460" opacity="0.5"/>
+                            <rect x="120" y="60" width="160" height="20" rx="4" fill="#e94560" opacity="0.7"/>
+                            <rect x="120" y="100" width="160" height="80" rx="8" fill="#1a1a2e" opacity="0.5"/>
+                            <rect x="120" y="190" width="160" height="10" rx="2" fill="#ffffff" opacity="0.5"/>
+                            <rect x="120" y="210" width="120" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+                            <rect x="120" y="230" width="80" height="20" rx="10" fill="#e94560" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">移动端APP</h3>
+                        <span class="work-category">应用开发</span>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#0f3460"/>
+                            <circle cx="200" cy="150" r="80" fill="none" stroke="#e94560" stroke-width="3" opacity="0.5"/>
+                            <circle cx="200" cy="150" r="60" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+                            <path d="M200 90 L200 150 L250 170" stroke="#e94560" stroke-width="3" fill="none"/>
+                            <rect x="50" y="250" width="300" height="10" rx="5" fill="#1a1a2e" opacity="0.5"/>
+                            <rect x="50" y="250" width="200" height="10" rx="5" fill="#e94560" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">安全防护系统</h3>
+                        <span class="work-category">网络安全</span>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#1a1a2e"/>
+                            <rect x="30" y="30" width="160" height="240" rx="8" fill="#0f3460" opacity="0.4"/>
+                            <rect x="210" y="30" width="160" height="115" rx="8" fill="#0f3460" opacity="0.4"/>
+                            <rect x="210" y="155" width="160" height="115" rx="8" fill="#0f3460" opacity="0.4"/>
+                            <rect x="50" y="50" width="120" height="15" rx="3" fill="#e94560" opacity="0.7"/>
+                            <rect x="50" y="75" width="100" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+                            <rect x="50" y="95" width="80" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+                            <rect x="230" y="50" width="100" height="12" rx="3" fill="#e94560" opacity="0.6"/>
+                            <rect x="230" y="70" width="120" height="6" rx="2" fill="#ffffff" opacity="0.3"/>
+                            <rect x="230" y="85" width="100" height="6" rx="2" fill="#ffffff" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">企业管理系统</h3>
+                        <span class="work-category">系统开发</span>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#16213e"/>
+                            <rect x="50" y="50" width="300" height="200" rx="10" fill="#0f3460" opacity="0.3"/>
+                            <circle cx="100" cy="100" r="25" fill="#e94560" opacity="0.6"/>
+                            <rect x="140" y="85" width="150" height="10" rx="3" fill="#ffffff" opacity="0.5"/>
+                            <rect x="140" y="105" width="100" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+                            <rect x="70" y="150" width="260" height="8" rx="2" fill="#ffffff" opacity="0.2"/>
+                            <rect x="70" y="170" width="200" height="8" rx="2" fill="#ffffff" opacity="0.2"/>
+                            <rect x="70" y="190" width="230" height="8" rx="2" fill="#ffffff" opacity="0.2"/>
+                            <rect x="70" y="210" width="180" height="8" rx="2" fill="#ffffff" opacity="0.2"/>
+                        </svg>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">电商平台</h3>
+                        <span class="work-category">网站开发</span>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#0f3460"/>
+                            <path d="M50 200 Q125 100 200 200 T350 200" stroke="#e94560" stroke-width="3" fill="none"/>
+                            <path d="M50 220 Q125 150 200 220 T350 220" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.5"/>
+                            <circle cx="50" cy="200" r="6" fill="#e94560"/>
+                            <circle cx="125" cy="150" r="6" fill="#e94560"/>
+                            <circle cx="200" cy="200" r="6" fill="#e94560"/>
+                            <circle cx="275" cy="175" r="6" fill="#e94560"/>
+                            <circle cx="350" cy="200" r="6" fill="#e94560"/>
+                            <rect x="50" y="50" width="120" height="60" rx="8" fill="#1a1a2e" opacity="0.5"/>
+                            <rect x="60" y="60" width="60" height="10" rx="2" fill="#e94560" opacity="0.7"/>
+                            <rect x="60" y="80" width="80" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <div class="work-info">
+                        <h3 class="work-title">数据可视化</h3>
+                        <span class="work-category">系统开发</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队介绍 -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">OUR TEAM</span>
+                <h2 class="section-title">专业技术团队</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" fill="#0f3460"/>
+                            <circle cx="50" cy="38" r="18" fill="#e94560" opacity="0.6"/>
+                            <ellipse cx="50" cy="85" rx="28" ry="20" fill="#e94560" opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <h3 class="member-name">技术总监</h3>
+                    <span class="member-role">全栈架构师</span>
+                    <p class="member-bio">10年互联网开发经验，精通前后端技术，擅长系统架构设计</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" fill="#16213e"/>
+                            <circle cx="50" cy="38" r="18" fill="#e94560" opacity="0.5"/>
+                            <ellipse cx="50" cy="85" rx="28" ry="20" fill="#e94560" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3 class="member-name">前端工程师</h3>
+                    <span class="member-role">UI/UX专家</span>
+                    <p class="member-bio">专注前端开发8年，精通React、Vue等框架，注重用户体验</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" fill="#1a1a2e"/>
+                            <circle cx="50" cy="38" r="18" fill="#e94560" opacity="0.7"/>
+                            <ellipse cx="50" cy="85" rx="28" ry="20" fill="#e94560" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="member-name">安全工程师</h3>
+                    <span class="member-role">网络安全专家</span>
+                    <p class="member-bio">资深网络安全专家，持有多项安全认证，专注攻防技术研究</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" fill="#0f3460"/>
+                            <circle cx="50" cy="38" r="18" fill="#e94560" opacity="0.5"/>
+                            <ellipse cx="50" cy="85" rx="28" ry="20" fill="#e94560" opacity="0.35"/>
+                        </svg>
+                    </div>
+                    <h3 class="member-name">运维工程师</h3>
+                    <span class="member-role">云服务专家</span>
+                    <p class="member-bio">精通服务器运维与云服务配置，确保系统7×24小时稳定运行</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTACT US</span>
+                <h2 class="section-title">联系我们</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>开始您的项目</h3>
+                    <p>无论您有任何问题或项目需求，都欢迎与我们联系。我们将在24小时内回复您。</p>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>地址</h4>
+                                <p>中国 · 许昌</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>邮箱</h4>
+                                <p>contact@guangyu.studio</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>电话</h4>
+                                <p>400-888-8888</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>工作时间</h4>
+                                <p>周一至周日 9:00 - 21:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>您的姓名</label>
+                            <input type="text" placeholder="请输入姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label>联系电话</label>
+                            <input type="tel" placeholder="请输入电话">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>电子邮箱</label>
+                        <input type="email" placeholder="请输入邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <label>项目类型</label>
+                        <select>
+                            <option>网站建设</option>
+                            <option>系统开发</option>
+                            <option>网络安全</option>
+                            <option>技术运维</option>
+                            <option>其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>项目描述</label>
+                        <textarea rows="5" placeholder="请描述您的项目需求..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        发送咨询
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="广域网络工作室">
+                    </div>
+                    <p>专业的网络技术服务提供商，为您的数字化转型保驾护航</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#services">服务项目</a></li>
+                        <li><a href="#works">案例展示</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>服务项目</h4>
+                    <ul>
+                        <li><a href="#services">网站建设</a></li>
+                        <li><a href="#services">网络安全</a></li>
+                        <li><a href="#services">系统开发</a></li>
+                        <li><a href="#services">技术运维</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>关注我们</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="微信">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" title="QQ">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" title="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" title="邮箱">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 广域网络工作室 Guangyu Network Studio. All rights reserved.</p>
+                <p class="footer-tag">GDAC STUDIO · 专业网络技术服务</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop" title="返回顶部">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
